@@ -2,12 +2,14 @@
 
 from __future__ import annotations
 
+import base64
 import urllib.parse
 from dataclasses import dataclass
 from typing import Any, Iterator
 
 from .http import HttpClient
 from .models import Package
+from .manifests import parser_for
 
 
 @dataclass(slots=True)
@@ -63,6 +65,38 @@ class GitHubClient:
                 normalized[purl] = package
         return list(normalized.values())
 
+    def manifest_packages(self, repository: dict[str, Any]) -> tuple[list[Package], list[str]]:
+        """Discover and parse dependency locks directly from a public Git tree."""
+
+        full_name = repository["full_name"]
+        quoted = "/".join(urllib.parse.quote(part, safe="") for part in full_name.split("/", 1))
+        branch = urllib.parse.quote(repository.get("default_branch") or "main", safe="")
+        tree_url = f"https://api.github.com/repos/{quoted}/git/trees/{branch}?recursive=1"
+        tree = self.http.get_json(tree_url, self.headers)
+        if tree.get("truncated"):
+            raise RuntimeError("Git tree was truncated; manifest coverage would be incomplete")
+
+        packages: dict[str, Package] = {}
+        errors: list[str] = []
+        candidates = [
+            item for item in tree.get("tree", [])
+            if item.get("type") == "blob"
+            and item.get("size", 0) <= 2_000_000
+            and parser_for(item.get("path", ""))
+        ]
+        for item in candidates:
+            path = item["path"]
+            parser = parser_for(path)
+            assert parser is not None
+            try:
+                blob = self.http.get_json(item["url"], self.headers)
+                text = base64.b64decode(blob["content"]).decode("utf-8")
+                for package in parser(text):
+                    packages[package.purl] = package
+            except (ValueError, KeyError, TypeError, UnicodeDecodeError) as exc:
+                errors.append(f"{path}: unable to parse lockfile ({exc})")
+        return list(packages.values()), errors
+
 
 def parse_purl(purl: str) -> Package | None:
     """Parse the Package URL subset emitted by GitHub's SPDX endpoint."""
@@ -101,4 +135,3 @@ def eligible_repositories(
         if repository.get("name") in excluded:
             continue
         yield repository
-

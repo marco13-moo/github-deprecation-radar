@@ -2,14 +2,14 @@
 
 [![Daily dependency deprecation scan](https://github.com/marco13-moo/github-deprecation-radar/actions/workflows/deprecation-dashboard.yml/badge.svg)](https://github.com/marco13-moo/github-deprecation-radar/actions/workflows/deprecation-dashboard.yml)
 
-An evidence-based, daily dashboard of deprecated or withdrawn libraries across an account's public GitHub repositories. The workflow inventories repositories, requests each repository's GitHub dependency-graph SBOM, checks package versions against their authoritative registry, and commits this README plus a machine-readable JSON report when the result changes.
+An evidence-based, daily dashboard of deprecated or withdrawn libraries across an account's public GitHub repositories. The workflow inventories repositories, combines GitHub dependency-graph SBOMs with direct lockfile discovery, checks exact package versions against authoritative registries, and commits this README plus a machine-readable JSON report when the result changes.
 
 <!-- deprecation-dashboard:start -->
-_Last refreshed: **2026-09-22T17:07:03.062410Z** · Scope: public repositories owned by **marco13-moo**_
+_Last refreshed: **2026-09-22T17:12:48.223741Z** · Scope: public repositories owned by **marco13-moo**_
 
 | Repositories | Packages checked | Deprecated | Repos affected | Incomplete coverage |
 |---:|---:|---:|---:|---:|
-| 20 | 0 | 0 | 0 | 20 |
+| 20 | 112 | 0 | 0 | 6 |
 
 ## Action queue
 
@@ -17,28 +17,37 @@ No registry-confirmed deprecated dependencies were detected in the completed che
 
 ## Coverage gaps
 
-- [marco13-moo/atlas-platform-fabric](https://github.com/marco13-moo/atlas-platform-fabric): Dependency graph SBOM unavailable or not enabled
-- [marco13-moo/cloudspend-guardian](https://github.com/marco13-moo/cloudspend-guardian): Dependency graph SBOM unavailable or not enabled
-- [marco13-moo/cron-actions](https://github.com/marco13-moo/cron-actions): Dependency graph SBOM unavailable or not enabled
-- [marco13-moo/daily-activity-bot](https://github.com/marco13-moo/daily-activity-bot): Dependency graph SBOM unavailable or not enabled
-- [marco13-moo/daily-activity-commits](https://github.com/marco13-moo/daily-activity-commits): Dependency graph SBOM unavailable or not enabled
-- [marco13-moo/daily-code-review](https://github.com/marco13-moo/daily-code-review): Dependency graph SBOM unavailable or not enabled
-- [marco13-moo/daily-dose-of-devops](https://github.com/marco13-moo/daily-dose-of-devops): Dependency graph SBOM unavailable or not enabled
-- [marco13-moo/devsecops-vulnerability-automation](https://github.com/marco13-moo/devsecops-vulnerability-automation): Dependency graph SBOM unavailable or not enabled
-- [marco13-moo/finops-carbon-runtime](https://github.com/marco13-moo/finops-carbon-runtime): Dependency graph SBOM unavailable or not enabled
-- [marco13-moo/github-achievements-reference](https://github.com/marco13-moo/github-achievements-reference): Dependency graph SBOM unavailable or not enabled
-- [marco13-moo/github-dashboard](https://github.com/marco13-moo/github-dashboard): Dependency graph SBOM unavailable or not enabled
-- [marco13-moo/github-metrics](https://github.com/marco13-moo/github-metrics): Dependency graph SBOM unavailable or not enabled
-- [marco13-moo/ludotheca-share-mesh](https://github.com/marco13-moo/ludotheca-share-mesh): Dependency graph SBOM unavailable or not enabled
-- [marco13-moo/marco13-moo](https://github.com/marco13-moo/marco13-moo): Dependency graph SBOM unavailable or not enabled
-- [marco13-moo/marco13-moo.github.io](https://github.com/marco13-moo/marco13-moo.github.io): unsupported ecosystems: `github`, `githubactions`
-- [marco13-moo/my-setup](https://github.com/marco13-moo/my-setup): Dependency graph SBOM unavailable or not enabled
-- [marco13-moo/personal-cron](https://github.com/marco13-moo/personal-cron): Dependency graph SBOM unavailable or not enabled
-- [marco13-moo/predictive-reliability-platform](https://github.com/marco13-moo/predictive-reliability-platform): Dependency graph SBOM unavailable or not enabled
-- [marco13-moo/self-service-cicd-demo](https://github.com/marco13-moo/self-service-cicd-demo): Dependency graph SBOM unavailable or not enabled
-- [marco13-moo/self-service-cicd-platform](https://github.com/marco13-moo/self-service-cicd-platform): Dependency graph SBOM unavailable or not enabled
+- [marco13-moo/atlas-platform-fabric](https://github.com/marco13-moo/atlas-platform-fabric): Dependency graph SBOM unavailable or not enabled; no supported lockfile dependencies were discovered; 1 registry lookup error(s)
+- [marco13-moo/github-achievements-reference](https://github.com/marco13-moo/github-achievements-reference): Dependency graph SBOM unavailable or not enabled; no supported lockfile dependencies were discovered
+- [marco13-moo/ludotheca-share-mesh](https://github.com/marco13-moo/ludotheca-share-mesh): Dependency graph SBOM unavailable or not enabled; no supported lockfile dependencies were discovered
+- [marco13-moo/marco13-moo](https://github.com/marco13-moo/marco13-moo): Dependency graph SBOM unavailable or not enabled; no supported lockfile dependencies were discovered
+- [marco13-moo/my-setup](https://github.com/marco13-moo/my-setup): Dependency graph SBOM unavailable or not enabled; no supported lockfile dependencies were discovered
+- [marco13-moo/self-service-cicd-demo](https://github.com/marco13-moo/self-service-cicd-demo): Dependency graph SBOM unavailable or not enabled; no supported lockfile dependencies were discovered
 
-> A repository is only considered checked where GitHub supplied an SBOM and the package ecosystem has a supported registry signal. A coverage gap is not a clean bill of health.
+## Discovery coverage
+
+- [marco13-moo/atlas-platform-fabric](https://github.com/marco13-moo/atlas-platform-fabric): 0 supported package(s) checked via no successful source
+- [marco13-moo/cloudspend-guardian](https://github.com/marco13-moo/cloudspend-guardian): 4 supported package(s) checked via repository-lockfiles
+- [marco13-moo/cron-actions](https://github.com/marco13-moo/cron-actions): 1 supported package(s) checked via repository-lockfiles
+- [marco13-moo/daily-activity-bot](https://github.com/marco13-moo/daily-activity-bot): 1 supported package(s) checked via repository-lockfiles
+- [marco13-moo/daily-activity-commits](https://github.com/marco13-moo/daily-activity-commits): 1 supported package(s) checked via repository-lockfiles
+- [marco13-moo/daily-code-review](https://github.com/marco13-moo/daily-code-review): 2 supported package(s) checked via repository-lockfiles
+- [marco13-moo/daily-dose-of-devops](https://github.com/marco13-moo/daily-dose-of-devops): 8 supported package(s) checked via repository-lockfiles
+- [marco13-moo/devsecops-vulnerability-automation](https://github.com/marco13-moo/devsecops-vulnerability-automation): 4 supported package(s) checked via repository-lockfiles
+- [marco13-moo/finops-carbon-runtime](https://github.com/marco13-moo/finops-carbon-runtime): 2 supported package(s) checked via repository-lockfiles
+- [marco13-moo/github-achievements-reference](https://github.com/marco13-moo/github-achievements-reference): 0 supported package(s) checked via repository-lockfiles
+- [marco13-moo/github-dashboard](https://github.com/marco13-moo/github-dashboard): 2 supported package(s) checked via repository-lockfiles
+- [marco13-moo/github-metrics](https://github.com/marco13-moo/github-metrics): 1 supported package(s) checked via repository-lockfiles
+- [marco13-moo/ludotheca-share-mesh](https://github.com/marco13-moo/ludotheca-share-mesh): 0 supported package(s) checked via repository-lockfiles
+- [marco13-moo/marco13-moo](https://github.com/marco13-moo/marco13-moo): 0 supported package(s) checked via repository-lockfiles
+- [marco13-moo/marco13-moo.github.io](https://github.com/marco13-moo/marco13-moo.github.io): 3 supported package(s) checked via github-sbom, repository-lockfiles
+- [marco13-moo/my-setup](https://github.com/marco13-moo/my-setup): 0 supported package(s) checked via repository-lockfiles
+- [marco13-moo/personal-cron](https://github.com/marco13-moo/personal-cron): 1 supported package(s) checked via repository-lockfiles
+- [marco13-moo/predictive-reliability-platform](https://github.com/marco13-moo/predictive-reliability-platform): 2 supported package(s) checked via repository-lockfiles
+- [marco13-moo/self-service-cicd-demo](https://github.com/marco13-moo/self-service-cicd-demo): 0 supported package(s) checked via repository-lockfiles
+- [marco13-moo/self-service-cicd-platform](https://github.com/marco13-moo/self-service-cicd-platform): 80 supported package(s) checked via repository-lockfiles
+
+> A dependency is only considered checked when an exact version came from an SBOM or supported lockfile and its ecosystem has an authoritative registry signal. A coverage gap is not a clean bill of health.
 <!-- deprecation-dashboard:end -->
 
 ## What it detects
@@ -49,6 +58,10 @@ No registry-confirmed deprecated dependencies were detected in the completed che
 | PyPI | Yanked release files | Maintainer withdrew the installed release |
 | NuGet | Registration `deprecation` metadata | Publisher deprecated the package/version |
 | Composer | Packagist `abandoned` metadata | Package is unmaintained, optionally with a replacement |
+| Cargo | crates.io `yanked` metadata | Publisher withdrew the installed crate version |
+| Go modules | `retract` directives in the publisher's latest `go.mod` | Publisher declared the installed module version unsuitable |
+| RubyGems | Version-level `yanked` metadata | Publisher removed the installed gem version |
+| GitHub Actions / GitHub packages | Repository `archived` state | Upstream source is permanently read-only |
 
 Other ecosystems are shown under **Coverage gaps**. The scanner does not conflate “no supported signal” with “healthy.” Vulnerabilities and ordinary available upgrades are deliberately outside this dashboard's scope; Dependabot or Renovate should complement it.
 
@@ -86,8 +99,8 @@ Python 3.11 or newer is required. Runtime dependencies are intentionally limited
 ```text
 GitHub repository inventory
           │
-          ▼
-Dependency Graph SBOM ── unavailable ──► Coverage gaps
+          ├── Dependency Graph SBOM
+          └── Public Git tree ──► exact-version lockfile parsers
           │
           ▼
 Package URL normalization

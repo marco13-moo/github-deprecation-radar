@@ -78,6 +78,13 @@ def render_dashboard(payload: dict[str, object]) -> str:
         if reasons:
             gaps.append(f"- [{repository['name']}]({repository['url']}): " + "; ".join(reasons))
     lines.extend(gaps or ["No coverage gaps were observed during this run."])
+    lines.extend(["", "## Discovery coverage", ""])
+    lines.extend([
+        f"- [{repository['name']}]({repository['url']}): "
+        f"{repository['packages_scanned']} supported package(s) checked via "
+        f"{', '.join(repository['discovery_sources']) or 'no successful source'}"
+        for repository in repositories
+    ] or ["No repositories were in scope."])
     lines.extend([
         "",
         "> A repository is only considered checked where GitHub supplied an SBOM and the package ecosystem has a supported registry signal. A coverage gap is not a clean bill of health.",

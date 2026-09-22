@@ -41,6 +41,7 @@ class RepositoryResult:
     packages_scanned: int = 0
     unsupported_ecosystems: set[str] = field(default_factory=set)
     lookup_errors: list[str] = field(default_factory=list)
+    discovery_sources: set[str] = field(default_factory=set)
     error: str | None = None
 
     def as_dict(self) -> dict[str, Any]:
@@ -51,5 +52,6 @@ class RepositoryResult:
             "packages_scanned": self.packages_scanned,
             "unsupported_ecosystems": sorted(self.unsupported_ecosystems),
             "lookup_errors": self.lookup_errors,
+            "discovery_sources": sorted(self.discovery_sources),
             "error": self.error,
         }

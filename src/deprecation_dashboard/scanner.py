@@ -29,14 +29,30 @@ class Scanner:
     def _scan_repository(self, repository: dict[str, Any]) -> RepositoryResult:
         full_name = repository["full_name"]
         result = RepositoryResult(name=full_name, url=repository["html_url"])
+        packages_by_purl = {}
+        sbom_error: str | None = None
         try:
-            packages = self.github.dependency_packages(full_name)
+            for package in self.github.dependency_packages(full_name):
+                packages_by_purl[package.purl] = package
+            result.discovery_sources.add("github-sbom")
         except HttpError as exc:
             if exc.status in {403, 404}:
-                result.error = "Dependency graph SBOM unavailable or not enabled"
+                sbom_error = "Dependency graph SBOM unavailable or not enabled"
             else:
-                result.error = str(exc)
-            return result
+                sbom_error = str(exc)
+
+        try:
+            manifest_packages, manifest_errors = self.github.manifest_packages(repository)
+            for package in manifest_packages:
+                packages_by_purl[package.purl] = package
+            result.lookup_errors.extend(manifest_errors)
+            result.discovery_sources.add("repository-lockfiles")
+        except (HttpError, RuntimeError) as exc:
+            result.lookup_errors.append(f"Manifest discovery failed: {exc}")
+
+        packages = list(packages_by_purl.values())
+        if not packages and sbom_error:
+            result.error = sbom_error + "; no supported lockfile dependencies were discovered"
 
         for package in packages:
             if package.ecosystem not in self.registries.supported_ecosystems:

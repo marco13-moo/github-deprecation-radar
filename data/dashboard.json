@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-22T17:07:03.062410Z",
+  "generated_at": "2026-09-22T17:12:48.223741Z",
   "owner": "marco13-moo",
   "summary": {
     "repositories_scanned": 20,
-    "packages_checked": 0,
+    "packages_checked": 112,
     "deprecated_dependencies": 0,
     "repositories_with_findings": 0,
-    "repositories_with_incomplete_coverage": 20
+    "repositories_with_incomplete_coverage": 6
   },
   "repositories": [
     {
@@ -16,80 +16,107 @@
       "findings": [],
       "packages_scanned": 0,
       "unsupported_ecosystems": [],
-      "lookup_errors": [],
-      "error": "Dependency graph SBOM unavailable or not enabled"
+      "lookup_errors": [
+        "Manifest discovery failed: HTTP 404 for https://api.github.com/repos/marco13-moo/atlas-platform-fabric/git/trees/main?recursive=1: {\"message\":\"Not Found\",\"documentation_url\":\"https://docs.github.com/rest/git/trees#get-a-tree\",\"status\":\"404\"}"
+      ],
+      "discovery_sources": [],
+      "error": "Dependency graph SBOM unavailable or not enabled; no supported lockfile dependencies were discovered"
     },
     {
       "name": "marco13-moo/cloudspend-guardian",
       "url": "https://github.com/marco13-moo/cloudspend-guardian",
       "findings": [],
-      "packages_scanned": 0,
+      "packages_scanned": 4,
       "unsupported_ecosystems": [],
       "lookup_errors": [],
-      "error": "Dependency graph SBOM unavailable or not enabled"
+      "discovery_sources": [
+        "repository-lockfiles"
+      ],
+      "error": null
     },
     {
       "name": "marco13-moo/cron-actions",
       "url": "https://github.com/marco13-moo/cron-actions",
       "findings": [],
-      "packages_scanned": 0,
+      "packages_scanned": 1,
       "unsupported_ecosystems": [],
       "lookup_errors": [],
-      "error": "Dependency graph SBOM unavailable or not enabled"
+      "discovery_sources": [
+        "repository-lockfiles"
+      ],
+      "error": null
     },
     {
       "name": "marco13-moo/daily-activity-bot",
       "url": "https://github.com/marco13-moo/daily-activity-bot",
       "findings": [],
-      "packages_scanned": 0,
+      "packages_scanned": 1,
       "unsupported_ecosystems": [],
       "lookup_errors": [],
-      "error": "Dependency graph SBOM unavailable or not enabled"
+      "discovery_sources": [
+        "repository-lockfiles"
+      ],
+      "error": null
     },
     {
       "name": "marco13-moo/daily-activity-commits",
       "url": "https://github.com/marco13-moo/daily-activity-commits",
       "findings": [],
-      "packages_scanned": 0,
+      "packages_scanned": 1,
       "unsupported_ecosystems": [],
       "lookup_errors": [],
-      "error": "Dependency graph SBOM unavailable or not enabled"
+      "discovery_sources": [
+        "repository-lockfiles"
+      ],
+      "error": null
     },
     {
       "name": "marco13-moo/daily-code-review",
       "url": "https://github.com/marco13-moo/daily-code-review",
       "findings": [],
-      "packages_scanned": 0,
+      "packages_scanned": 2,
       "unsupported_ecosystems": [],
       "lookup_errors": [],
-      "error": "Dependency graph SBOM unavailable or not enabled"
+      "discovery_sources": [
+        "repository-lockfiles"
+      ],
+      "error": null
     },
     {
       "name": "marco13-moo/daily-dose-of-devops",
       "url": "https://github.com/marco13-moo/daily-dose-of-devops",
       "findings": [],
-      "packages_scanned": 0,
+      "packages_scanned": 8,
       "unsupported_ecosystems": [],
       "lookup_errors": [],
-      "error": "Dependency graph SBOM unavailable or not enabled"
+      "discovery_sources": [
+        "repository-lockfiles"
+      ],
+      "error": null
     },
     {
       "name": "marco13-moo/devsecops-vulnerability-automation",
       "url": "https://github.com/marco13-moo/devsecops-vulnerability-automation",
       "findings": [],
-      "packages_scanned": 0,
+      "packages_scanned": 4,
       "unsupported_ecosystems": [],
       "lookup_errors": [],
-      "error": "Dependency graph SBOM unavailable or not enabled"
+      "discovery_sources": [
+        "repository-lockfiles"
+      ],
+      "error": null
     },
     {
       "name": "marco13-moo/finops-carbon-runtime",
       "url": "https://github.com/marco13-moo/finops-carbon-runtime",
       "findings": [],
-      "packages_scanned": 0,
+      "packages_scanned": 2,
       "unsupported_ecosystems": [],
       "lookup_errors": [],
-      "error": "Dependency graph SBOM unavailable or not enabled"
+      "discovery_sources": [
+        "repository-lockfiles"
+      ],
+      "error": null
     },
     {
       "name": "marco13-moo/github-achievements-reference",
@@ -98,25 +125,34 @@
       "packages_scanned": 0,
       "unsupported_ecosystems": [],
       "lookup_errors": [],
-      "error": "Dependency graph SBOM unavailable or not enabled"
+      "discovery_sources": [
+        "repository-lockfiles"
+      ],
+      "error": "Dependency graph SBOM unavailable or not enabled; no supported lockfile dependencies were discovered"
     },
     {
       "name": "marco13-moo/github-dashboard",
       "url": "https://github.com/marco13-moo/github-dashboard",
       "findings": [],
-      "packages_scanned": 0,
+      "packages_scanned": 2,
       "unsupported_ecosystems": [],
       "lookup_errors": [],
-      "error": "Dependency graph SBOM unavailable or not enabled"
+      "discovery_sources": [
+        "repository-lockfiles"
+      ],
+      "error": null
     },
     {
       "name": "marco13-moo/github-metrics",
       "url": "https://github.com/marco13-moo/github-metrics",
       "findings": [],
-      "packages_scanned": 0,
+      "packages_scanned": 1,
       "unsupported_ecosystems": [],
       "lookup_errors": [],
-      "error": "Dependency graph SBOM unavailable or not enabled"
+      "discovery_sources": [
+        "repository-lockfiles"
+      ],
+      "error": null
     },
     {
       "name": "marco13-moo/ludotheca-share-mesh",
@@ -125,7 +161,10 @@
       "packages_scanned": 0,
       "unsupported_ecosystems": [],
       "lookup_errors": [],
-      "error": "Dependency graph SBOM unavailable or not enabled"
+      "discovery_sources": [
+        "repository-lockfiles"
+      ],
+      "error": "Dependency graph SBOM unavailable or not enabled; no supported lockfile dependencies were discovered"
     },
     {
       "name": "marco13-moo/marco13-moo",
@@ -134,18 +173,22 @@
       "packages_scanned": 0,
       "unsupported_ecosystems": [],
       "lookup_errors": [],
-      "error": "Dependency graph SBOM unavailable or not enabled"
+      "discovery_sources": [
+        "repository-lockfiles"
+      ],
+      "error": "Dependency graph SBOM unavailable or not enabled; no supported lockfile dependencies were discovered"
     },
     {
       "name": "marco13-moo/marco13-moo.github.io",
       "url": "https://github.com/marco13-moo/marco13-moo.github.io",
       "findings": [],
-      "packages_scanned": 0,
-      "unsupported_ecosystems": [
-        "github",
-        "githubactions"
-      ],
+      "packages_scanned": 3,
+      "unsupported_ecosystems": [],
       "lookup_errors": [],
+      "discovery_sources": [
+        "github-sbom",
+        "repository-lockfiles"
+      ],
       "error": null
     },
     {
@@ -155,25 +198,34 @@
       "packages_scanned": 0,
       "unsupported_ecosystems": [],
       "lookup_errors": [],
-      "error": "Dependency graph SBOM unavailable or not enabled"
+      "discovery_sources": [
+        "repository-lockfiles"
+      ],
+      "error": "Dependency graph SBOM unavailable or not enabled; no supported lockfile dependencies were discovered"
     },
     {
       "name": "marco13-moo/personal-cron",
       "url": "https://github.com/marco13-moo/personal-cron",
       "findings": [],
-      "packages_scanned": 0,
+      "packages_scanned": 1,
       "unsupported_ecosystems": [],
       "lookup_errors": [],
-      "error": "Dependency graph SBOM unavailable or not enabled"
+      "discovery_sources": [
+        "repository-lockfiles"
+      ],
+      "error": null
     },
     {
       "name": "marco13-moo/predictive-reliability-platform",
       "url": "https://github.com/marco13-moo/predictive-reliability-platform",
       "findings": [],
-      "packages_scanned": 0,
+      "packages_scanned": 2,
       "unsupported_ecosystems": [],
       "lookup_errors": [],
-      "error": "Dependency graph SBOM unavailable or not enabled"
+      "discovery_sources": [
+        "repository-lockfiles"
+      ],
+      "error": null
     },
     {
       "name": "marco13-moo/self-service-cicd-demo",
@@ -182,16 +234,22 @@
       "packages_scanned": 0,
       "unsupported_ecosystems": [],
       "lookup_errors": [],
-      "error": "Dependency graph SBOM unavailable or not enabled"
+      "discovery_sources": [
+        "repository-lockfiles"
+      ],
+      "error": "Dependency graph SBOM unavailable or not enabled; no supported lockfile dependencies were discovered"
     },
     {
       "name": "marco13-moo/self-service-cicd-platform",
       "url": "https://github.com/marco13-moo/self-service-cicd-platform",
       "findings": [],
-      "packages_scanned": 0,
+      "packages_scanned": 80,
       "unsupported_ecosystems": [],
       "lookup_errors": [],
-      "error": "Dependency graph SBOM unavailable or not enabled"
+      "discovery_sources": [
+        "repository-lockfiles"
+      ],
+      "error": null
     }
   ]
 }

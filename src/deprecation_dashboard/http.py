@@ -29,13 +29,18 @@ class HttpClient:
     user_agent: str = "github-deprecation-radar/1.0"
 
     def get_json(self, url: str, headers: dict[str, str] | None = None) -> Any:
+        return json.loads(self.get_text(url, headers))
+
+    def get_text(self, url: str, headers: dict[str, str] | None = None) -> str:
+        """Return decoded response text with the same retry semantics as JSON."""
+
         merged = {"Accept": "application/json", "User-Agent": self.user_agent}
         merged.update(headers or {})
         for attempt in range(self.attempts):
             request = urllib.request.Request(url, headers=merged)
             try:
                 with urllib.request.urlopen(request, timeout=self.timeout) as response:
-                    return json.load(response)
+                    return response.read().decode("utf-8")
             except urllib.error.HTTPError as exc:
                 body = exc.read(512).decode("utf-8", errors="replace")
                 if exc.code not in {429, 500, 502, 503, 504} or attempt + 1 == self.attempts:
@@ -48,4 +53,3 @@ class HttpClient:
                 delay = 2**attempt
             time.sleep(delay + random.uniform(0, 0.25))
         raise AssertionError("retry loop exhausted without returning or raising")
-
