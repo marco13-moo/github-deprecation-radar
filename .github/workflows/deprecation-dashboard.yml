@@ -1,0 +1,52 @@
+name: Daily dependency deprecation scan
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deprecation-dashboard-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out dashboard repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Run offline tests
+        env:
+          PYTHONPATH: src
+        run: python -m unittest discover -s tests -v
+
+      - name: Generate dashboard
+        env:
+          # A fine-grained token can broaden cross-repository visibility. The
+          # repository-scoped workflow token remains the least-privilege fallback.
+          GH_TOKEN: ${{ secrets.DASHBOARD_TOKEN || github.token }}
+          PYTHONPATH: src
+        run: python -m deprecation_dashboard.cli
+
+      - name: Commit changed dashboard
+        run: |
+          if git diff --quiet -- README.md data/dashboard.json; then
+            echo "Dashboard is already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md data/dashboard.json
+          git commit -m "chore: refresh dependency deprecation dashboard"
+          git push

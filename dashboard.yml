@@ -1,0 +1,18 @@
+# GitHub account whose public repositories are inventoried. Leave blank to infer
+# the owner from GITHUB_REPOSITORY when GitHub Actions executes the scanner.
+owner: ""
+
+# Forks and archived repositories are excluded by default to keep findings
+# actionable. Set either value to true when those repositories remain maintained.
+include_forks: false
+include_archived: false
+
+# Repository names to omit from scanning. This dashboard repository is skipped
+# automatically, so it does not report its own implementation dependencies.
+exclude_repositories: []
+
+# Limits protect both GitHub and package registries from accidental fan-out.
+max_repositories: 100
+request_timeout_seconds: 20
+concurrency: 8
+

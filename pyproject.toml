@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "github-deprecation-radar"
+version = "1.0.0"
+description = "A daily GitHub Actions dashboard for deprecated dependencies across public repositories."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Marco" }]
+dependencies = []
+
+[project.scripts]
+deprecation-radar = "deprecation_dashboard.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/deprecation_dashboard"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+pythonpath = ["src"]
+

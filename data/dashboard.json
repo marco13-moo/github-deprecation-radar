@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "generated_at": null,
+  "owner": null,
+  "summary": {
+    "repositories_scanned": 0,
+    "packages_checked": 0,
+    "deprecated_dependencies": 0,
+    "repositories_with_findings": 0,
+    "repositories_with_incomplete_coverage": 0
+  },
+  "repositories": []
+}
+
