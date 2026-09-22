@@ -5,7 +5,7 @@
 An evidence-based, daily dashboard of deprecated or withdrawn libraries across an account's public GitHub repositories. The workflow inventories repositories, requests each repository's GitHub dependency-graph SBOM, checks package versions against their authoritative registry, and commits this README plus a machine-readable JSON report when the result changes.
 
 <!-- deprecation-dashboard:start -->
-_Last refreshed: **2026-09-22T17:05:41.251624Z** · Scope: public repositories owned by **marco13-moo**_
+_Last refreshed: **2026-09-22T17:07:03.062410Z** · Scope: public repositories owned by **marco13-moo**_
 
 | Repositories | Packages checked | Deprecated | Repos affected | Incomplete coverage |
 |---:|---:|---:|---:|---:|
