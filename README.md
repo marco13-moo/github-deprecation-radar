@@ -5,7 +5,7 @@
 An evidence-based, daily dashboard of deprecated or withdrawn libraries across an account's public GitHub repositories. The workflow inventories repositories, combines GitHub dependency-graph SBOMs with direct lockfile discovery, checks exact package versions against authoritative registries, and commits this README plus a machine-readable JSON report when the result changes.
 
 <!-- deprecation-dashboard:start -->
-_Last refreshed: **2026-09-22T17:12:48.223741Z** · Scope: public repositories owned by **marco13-moo**_
+_Last refreshed: **2026-09-22T17:14:30.454079Z** · Scope: public repositories owned by **marco13-moo**_
 
 | Repositories | Packages checked | Deprecated | Repos affected | Incomplete coverage |
 |---:|---:|---:|---:|---:|
@@ -47,7 +47,7 @@ No registry-confirmed deprecated dependencies were detected in the completed che
 - [marco13-moo/self-service-cicd-demo](https://github.com/marco13-moo/self-service-cicd-demo): 0 supported package(s) checked via repository-lockfiles
 - [marco13-moo/self-service-cicd-platform](https://github.com/marco13-moo/self-service-cicd-platform): 80 supported package(s) checked via repository-lockfiles
 
-> A dependency is only considered checked when an exact version came from an SBOM or supported lockfile and its ecosystem has an authoritative registry signal. A coverage gap is not a clean bill of health.
+> A repository is only considered checked where GitHub supplied an SBOM and the package ecosystem has a supported registry signal. A coverage gap is not a clean bill of health.
 <!-- deprecation-dashboard:end -->
 
 ## What it detects
