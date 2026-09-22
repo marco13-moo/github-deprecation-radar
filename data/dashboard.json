@@ -1,14 +1,197 @@
 {
   "schema_version": 1,
-  "generated_at": null,
-  "owner": null,
+  "generated_at": "2026-09-22T17:05:41.251624Z",
+  "owner": "marco13-moo",
   "summary": {
-    "repositories_scanned": 0,
+    "repositories_scanned": 20,
     "packages_checked": 0,
     "deprecated_dependencies": 0,
     "repositories_with_findings": 0,
-    "repositories_with_incomplete_coverage": 0
+    "repositories_with_incomplete_coverage": 20
   },
-  "repositories": []
+  "repositories": [
+    {
+      "name": "marco13-moo/atlas-platform-fabric",
+      "url": "https://github.com/marco13-moo/atlas-platform-fabric",
+      "findings": [],
+      "packages_scanned": 0,
+      "unsupported_ecosystems": [],
+      "lookup_errors": [],
+      "error": "Dependency graph SBOM unavailable or not enabled"
+    },
+    {
+      "name": "marco13-moo/cloudspend-guardian",
+      "url": "https://github.com/marco13-moo/cloudspend-guardian",
+      "findings": [],
+      "packages_scanned": 0,
+      "unsupported_ecosystems": [],
+      "lookup_errors": [],
+      "error": "Dependency graph SBOM unavailable or not enabled"
+    },
+    {
+      "name": "marco13-moo/cron-actions",
+      "url": "https://github.com/marco13-moo/cron-actions",
+      "findings": [],
+      "packages_scanned": 0,
+      "unsupported_ecosystems": [],
+      "lookup_errors": [],
+      "error": "Dependency graph SBOM unavailable or not enabled"
+    },
+    {
+      "name": "marco13-moo/daily-activity-bot",
+      "url": "https://github.com/marco13-moo/daily-activity-bot",
+      "findings": [],
+      "packages_scanned": 0,
+      "unsupported_ecosystems": [],
+      "lookup_errors": [],
+      "error": "Dependency graph SBOM unavailable or not enabled"
+    },
+    {
+      "name": "marco13-moo/daily-activity-commits",
+      "url": "https://github.com/marco13-moo/daily-activity-commits",
+      "findings": [],
+      "packages_scanned": 0,
+      "unsupported_ecosystems": [],
+      "lookup_errors": [],
+      "error": "Dependency graph SBOM unavailable or not enabled"
+    },
+    {
+      "name": "marco13-moo/daily-code-review",
+      "url": "https://github.com/marco13-moo/daily-code-review",
+      "findings": [],
+      "packages_scanned": 0,
+      "unsupported_ecosystems": [],
+      "lookup_errors": [],
+      "error": "Dependency graph SBOM unavailable or not enabled"
+    },
+    {
+      "name": "marco13-moo/daily-dose-of-devops",
+      "url": "https://github.com/marco13-moo/daily-dose-of-devops",
+      "findings": [],
+      "packages_scanned": 0,
+      "unsupported_ecosystems": [],
+      "lookup_errors": [],
+      "error": "Dependency graph SBOM unavailable or not enabled"
+    },
+    {
+      "name": "marco13-moo/devsecops-vulnerability-automation",
+      "url": "https://github.com/marco13-moo/devsecops-vulnerability-automation",
+      "findings": [],
+      "packages_scanned": 0,
+      "unsupported_ecosystems": [],
+      "lookup_errors": [],
+      "error": "Dependency graph SBOM unavailable or not enabled"
+    },
+    {
+      "name": "marco13-moo/finops-carbon-runtime",
+      "url": "https://github.com/marco13-moo/finops-carbon-runtime",
+      "findings": [],
+      "packages_scanned": 0,
+      "unsupported_ecosystems": [],
+      "lookup_errors": [],
+      "error": "Dependency graph SBOM unavailable or not enabled"
+    },
+    {
+      "name": "marco13-moo/github-achievements-reference",
+      "url": "https://github.com/marco13-moo/github-achievements-reference",
+      "findings": [],
+      "packages_scanned": 0,
+      "unsupported_ecosystems": [],
+      "lookup_errors": [],
+      "error": "Dependency graph SBOM unavailable or not enabled"
+    },
+    {
+      "name": "marco13-moo/github-dashboard",
+      "url": "https://github.com/marco13-moo/github-dashboard",
+      "findings": [],
+      "packages_scanned": 0,
+      "unsupported_ecosystems": [],
+      "lookup_errors": [],
+      "error": "Dependency graph SBOM unavailable or not enabled"
+    },
+    {
+      "name": "marco13-moo/github-metrics",
+      "url": "https://github.com/marco13-moo/github-metrics",
+      "findings": [],
+      "packages_scanned": 0,
+      "unsupported_ecosystems": [],
+      "lookup_errors": [],
+      "error": "Dependency graph SBOM unavailable or not enabled"
+    },
+    {
+      "name": "marco13-moo/ludotheca-share-mesh",
+      "url": "https://github.com/marco13-moo/ludotheca-share-mesh",
+      "findings": [],
+      "packages_scanned": 0,
+      "unsupported_ecosystems": [],
+      "lookup_errors": [],
+      "error": "Dependency graph SBOM unavailable or not enabled"
+    },
+    {
+      "name": "marco13-moo/marco13-moo",
+      "url": "https://github.com/marco13-moo/marco13-moo",
+      "findings": [],
+      "packages_scanned": 0,
+      "unsupported_ecosystems": [],
+      "lookup_errors": [],
+      "error": "Dependency graph SBOM unavailable or not enabled"
+    },
+    {
+      "name": "marco13-moo/marco13-moo.github.io",
+      "url": "https://github.com/marco13-moo/marco13-moo.github.io",
+      "findings": [],
+      "packages_scanned": 0,
+      "unsupported_ecosystems": [
+        "github",
+        "githubactions"
+      ],
+      "lookup_errors": [],
+      "error": null
+    },
+    {
+      "name": "marco13-moo/my-setup",
+      "url": "https://github.com/marco13-moo/my-setup",
+      "findings": [],
+      "packages_scanned": 0,
+      "unsupported_ecosystems": [],
+      "lookup_errors": [],
+      "error": "Dependency graph SBOM unavailable or not enabled"
+    },
+    {
+      "name": "marco13-moo/personal-cron",
+      "url": "https://github.com/marco13-moo/personal-cron",
+      "findings": [],
+      "packages_scanned": 0,
+      "unsupported_ecosystems": [],
+      "lookup_errors": [],
+      "error": "Dependency graph SBOM unavailable or not enabled"
+    },
+    {
+      "name": "marco13-moo/predictive-reliability-platform",
+      "url": "https://github.com/marco13-moo/predictive-reliability-platform",
+      "findings": [],
+      "packages_scanned": 0,
+      "unsupported_ecosystems": [],
+      "lookup_errors": [],
+      "error": "Dependency graph SBOM unavailable or not enabled"
+    },
+    {
+      "name": "marco13-moo/self-service-cicd-demo",
+      "url": "https://github.com/marco13-moo/self-service-cicd-demo",
+      "findings": [],
+      "packages_scanned": 0,
+      "unsupported_ecosystems": [],
+      "lookup_errors": [],
+      "error": "Dependency graph SBOM unavailable or not enabled"
+    },
+    {
+      "name": "marco13-moo/self-service-cicd-platform",
+      "url": "https://github.com/marco13-moo/self-service-cicd-platform",
+      "findings": [],
+      "packages_scanned": 0,
+      "unsupported_ecosystems": [],
+      "lookup_errors": [],
+      "error": "Dependency graph SBOM unavailable or not enabled"
+    }
+  ]
 }
-

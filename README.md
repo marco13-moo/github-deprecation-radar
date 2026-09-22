@@ -5,7 +5,40 @@
 An evidence-based, daily dashboard of deprecated or withdrawn libraries across an account's public GitHub repositories. The workflow inventories repositories, requests each repository's GitHub dependency-graph SBOM, checks package versions against their authoritative registry, and commits this README plus a machine-readable JSON report when the result changes.
 
 <!-- deprecation-dashboard:start -->
-_The dashboard has not run yet. Trigger the workflow after creating the repository._
+_Last refreshed: **2026-09-22T17:05:41.251624Z** · Scope: public repositories owned by **marco13-moo**_
+
+| Repositories | Packages checked | Deprecated | Repos affected | Incomplete coverage |
+|---:|---:|---:|---:|---:|
+| 20 | 0 | 0 | 0 | 20 |
+
+## Action queue
+
+No registry-confirmed deprecated dependencies were detected in the completed checks.
+
+## Coverage gaps
+
+- [marco13-moo/atlas-platform-fabric](https://github.com/marco13-moo/atlas-platform-fabric): Dependency graph SBOM unavailable or not enabled
+- [marco13-moo/cloudspend-guardian](https://github.com/marco13-moo/cloudspend-guardian): Dependency graph SBOM unavailable or not enabled
+- [marco13-moo/cron-actions](https://github.com/marco13-moo/cron-actions): Dependency graph SBOM unavailable or not enabled
+- [marco13-moo/daily-activity-bot](https://github.com/marco13-moo/daily-activity-bot): Dependency graph SBOM unavailable or not enabled
+- [marco13-moo/daily-activity-commits](https://github.com/marco13-moo/daily-activity-commits): Dependency graph SBOM unavailable or not enabled
+- [marco13-moo/daily-code-review](https://github.com/marco13-moo/daily-code-review): Dependency graph SBOM unavailable or not enabled
+- [marco13-moo/daily-dose-of-devops](https://github.com/marco13-moo/daily-dose-of-devops): Dependency graph SBOM unavailable or not enabled
+- [marco13-moo/devsecops-vulnerability-automation](https://github.com/marco13-moo/devsecops-vulnerability-automation): Dependency graph SBOM unavailable or not enabled
+- [marco13-moo/finops-carbon-runtime](https://github.com/marco13-moo/finops-carbon-runtime): Dependency graph SBOM unavailable or not enabled
+- [marco13-moo/github-achievements-reference](https://github.com/marco13-moo/github-achievements-reference): Dependency graph SBOM unavailable or not enabled
+- [marco13-moo/github-dashboard](https://github.com/marco13-moo/github-dashboard): Dependency graph SBOM unavailable or not enabled
+- [marco13-moo/github-metrics](https://github.com/marco13-moo/github-metrics): Dependency graph SBOM unavailable or not enabled
+- [marco13-moo/ludotheca-share-mesh](https://github.com/marco13-moo/ludotheca-share-mesh): Dependency graph SBOM unavailable or not enabled
+- [marco13-moo/marco13-moo](https://github.com/marco13-moo/marco13-moo): Dependency graph SBOM unavailable or not enabled
+- [marco13-moo/marco13-moo.github.io](https://github.com/marco13-moo/marco13-moo.github.io): unsupported ecosystems: `github`, `githubactions`
+- [marco13-moo/my-setup](https://github.com/marco13-moo/my-setup): Dependency graph SBOM unavailable or not enabled
+- [marco13-moo/personal-cron](https://github.com/marco13-moo/personal-cron): Dependency graph SBOM unavailable or not enabled
+- [marco13-moo/predictive-reliability-platform](https://github.com/marco13-moo/predictive-reliability-platform): Dependency graph SBOM unavailable or not enabled
+- [marco13-moo/self-service-cicd-demo](https://github.com/marco13-moo/self-service-cicd-demo): Dependency graph SBOM unavailable or not enabled
+- [marco13-moo/self-service-cicd-platform](https://github.com/marco13-moo/self-service-cicd-platform): Dependency graph SBOM unavailable or not enabled
+
+> A repository is only considered checked where GitHub supplied an SBOM and the package ecosystem has a supported registry signal. A coverage gap is not a clean bill of health.
 <!-- deprecation-dashboard:end -->
 
 ## What it detects
