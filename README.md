@@ -4,6 +4,18 @@
 
 An evidence-based, daily dashboard of deprecated or withdrawn libraries across an account's public GitHub repositories. The workflow inventories repositories, combines GitHub dependency-graph SBOMs with direct lockfile discovery, checks exact package versions against authoritative registries, and commits this README plus a machine-readable JSON report when the result changes.
 
+## What changed
+
+The September 2026 coverage upgrade removed the GitHub SBOM endpoint as a single point of failure:
+
+- Added public Git-tree discovery and exact-version parsing for npm, pnpm, Yarn, Python requirements, Poetry, uv, Pipenv, Cargo, Go, RubyGems, Composer, NuGet, and Gradle lockfiles.
+- Expanded authoritative deprecation signals from four ecosystems to npm, PyPI, NuGet, Composer, Cargo, Go modules, RubyGems, and GitHub-hosted dependencies such as Actions.
+- Added per-repository discovery provenance so the dashboard identifies whether evidence came from an SBOM, repository lockfiles, or both.
+- Reduced incomplete repository coverage from 20 repositories to 6 and increased verified package checks from 0 to 112 in the first upgraded run.
+- Added offline parser and Go-retraction tests while preserving explicit coverage gaps for unavailable repositories, unsupported metadata, and registry failures.
+
+See [`data/dashboard.json`](data/dashboard.json) for the complete machine-readable result and [the workflow history](https://github.com/marco13-moo/github-deprecation-radar/actions/workflows/deprecation-dashboard.yml) for execution evidence.
+
 <!-- deprecation-dashboard:start -->
 _Last refreshed: **2026-09-23T11:30:25.754403Z** · Scope: public repositories owned by **marco13-moo**_
 
@@ -47,7 +59,7 @@ No registry-confirmed deprecated dependencies were detected in the completed che
 - [marco13-moo/self-service-cicd-demo](https://github.com/marco13-moo/self-service-cicd-demo): 0 supported package(s) checked via repository-lockfiles
 - [marco13-moo/self-service-cicd-platform](https://github.com/marco13-moo/self-service-cicd-platform): 80 supported package(s) checked via repository-lockfiles
 
-> A repository is only considered checked where GitHub supplied an SBOM and the package ecosystem has a supported registry signal. A coverage gap is not a clean bill of health.
+> A dependency is only considered checked when an exact version came from an SBOM or supported lockfile and its ecosystem has an authoritative registry signal. A coverage gap is not a clean bill of health.
 <!-- deprecation-dashboard:end -->
 
 ## What it detects

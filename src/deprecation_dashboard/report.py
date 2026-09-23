@@ -87,7 +87,7 @@ def render_dashboard(payload: dict[str, object]) -> str:
     ] or ["No repositories were in scope."])
     lines.extend([
         "",
-        "> A repository is only considered checked where GitHub supplied an SBOM and the package ecosystem has a supported registry signal. A coverage gap is not a clean bill of health.",
+        "> A dependency is only considered checked when an exact version came from an SBOM or supported lockfile and its ecosystem has an authoritative registry signal. A coverage gap is not a clean bill of health.",
         END_MARKER,
     ])
     return "\n".join(lines)
