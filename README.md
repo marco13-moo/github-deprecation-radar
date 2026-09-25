@@ -17,11 +17,11 @@ The September 2026 coverage upgrade removed the GitHub SBOM endpoint as a single
 See [`data/dashboard.json`](data/dashboard.json) for the complete machine-readable result and [the workflow history](https://github.com/marco13-moo/github-deprecation-radar/actions/workflows/deprecation-dashboard.yml) for execution evidence.
 
 <!-- deprecation-dashboard:start -->
-_Last refreshed: **2026-09-24T11:40:47.563486Z** · Scope: public repositories owned by **marco13-moo**_
+_Last refreshed: **2026-09-25T11:46:46.957172Z** · Scope: public repositories owned by **marco13-moo**_
 
 | Repositories | Packages checked | Deprecated | Repos affected | Incomplete coverage |
 |---:|---:|---:|---:|---:|
-| 20 | 112 | 0 | 0 | 6 |
+| 20 | 114 | 0 | 0 | 5 |
 
 ## Action queue
 
@@ -29,7 +29,6 @@ No registry-confirmed deprecated dependencies were detected in the completed che
 
 ## Coverage gaps
 
-- [marco13-moo/atlas-platform-fabric](https://github.com/marco13-moo/atlas-platform-fabric): Dependency graph SBOM unavailable or not enabled; no supported lockfile dependencies were discovered; 1 registry lookup error(s)
 - [marco13-moo/github-achievements-reference](https://github.com/marco13-moo/github-achievements-reference): Dependency graph SBOM unavailable or not enabled; no supported lockfile dependencies were discovered
 - [marco13-moo/ludotheca-share-mesh](https://github.com/marco13-moo/ludotheca-share-mesh): Dependency graph SBOM unavailable or not enabled; no supported lockfile dependencies were discovered
 - [marco13-moo/marco13-moo](https://github.com/marco13-moo/marco13-moo): Dependency graph SBOM unavailable or not enabled; no supported lockfile dependencies were discovered
@@ -38,7 +37,7 @@ No registry-confirmed deprecated dependencies were detected in the completed che
 
 ## Discovery coverage
 
-- [marco13-moo/atlas-platform-fabric](https://github.com/marco13-moo/atlas-platform-fabric): 0 supported package(s) checked via no successful source
+- [marco13-moo/atlas-platform-fabric](https://github.com/marco13-moo/atlas-platform-fabric): 2 supported package(s) checked via repository-lockfiles
 - [marco13-moo/cloudspend-guardian](https://github.com/marco13-moo/cloudspend-guardian): 4 supported package(s) checked via repository-lockfiles
 - [marco13-moo/cron-actions](https://github.com/marco13-moo/cron-actions): 1 supported package(s) checked via repository-lockfiles
 - [marco13-moo/daily-activity-bot](https://github.com/marco13-moo/daily-activity-bot): 1 supported package(s) checked via repository-lockfiles
