@@ -17,7 +17,7 @@ The September 2026 coverage upgrade removed the GitHub SBOM endpoint as a single
 See [`data/dashboard.json`](data/dashboard.json) for the complete machine-readable result and [the workflow history](https://github.com/marco13-moo/github-deprecation-radar/actions/workflows/deprecation-dashboard.yml) for execution evidence.
 
 <!-- deprecation-dashboard:start -->
-_Last refreshed: **2026-10-19T13:05:20.887633Z** · Scope: public repositories owned by **marco13-moo**_
+_Last refreshed: **2026-10-20T11:30:32.521402Z** · Scope: public repositories owned by **marco13-moo**_
 
 | Repositories | Packages checked | Deprecated | Repos affected | Incomplete coverage |
 |---:|---:|---:|---:|---:|
