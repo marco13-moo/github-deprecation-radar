@@ -17,11 +17,11 @@ The September 2026 coverage upgrade removed the GitHub SBOM endpoint as a single
 See [`data/dashboard.json`](data/dashboard.json) for the complete machine-readable result and [the workflow history](https://github.com/marco13-moo/github-deprecation-radar/actions/workflows/deprecation-dashboard.yml) for execution evidence.
 
 <!-- deprecation-dashboard:start -->
-_Last refreshed: **2026-10-21T11:42:46.237934Z** · Scope: public repositories owned by **marco13-moo**_
+_Last refreshed: **2026-10-22T11:45:56.866915Z** · Scope: public repositories owned by **marco13-moo**_
 
 | Repositories | Packages checked | Deprecated | Repos affected | Incomplete coverage |
 |---:|---:|---:|---:|---:|
-| 20 | 114 | 0 | 0 | 5 |
+| 20 | 79 | 0 | 0 | 20 |
 
 ## Action queue
 
@@ -29,34 +29,49 @@ No registry-confirmed deprecated dependencies were detected in the completed che
 
 ## Coverage gaps
 
+- [marco13-moo/atlas-platform-fabric](https://github.com/marco13-moo/atlas-platform-fabric): 2 registry lookup error(s)
+- [marco13-moo/cloudspend-guardian](https://github.com/marco13-moo/cloudspend-guardian): 4 registry lookup error(s)
+- [marco13-moo/cron-actions](https://github.com/marco13-moo/cron-actions): 1 registry lookup error(s)
+- [marco13-moo/daily-activity-bot](https://github.com/marco13-moo/daily-activity-bot): 1 registry lookup error(s)
+- [marco13-moo/daily-activity-commits](https://github.com/marco13-moo/daily-activity-commits): 1 registry lookup error(s)
+- [marco13-moo/daily-code-review](https://github.com/marco13-moo/daily-code-review): 2 registry lookup error(s)
+- [marco13-moo/daily-dose-of-devops](https://github.com/marco13-moo/daily-dose-of-devops): 2 registry lookup error(s)
+- [marco13-moo/devsecops-vulnerability-automation](https://github.com/marco13-moo/devsecops-vulnerability-automation): 4 registry lookup error(s)
+- [marco13-moo/finops-carbon-runtime](https://github.com/marco13-moo/finops-carbon-runtime): 2 registry lookup error(s)
 - [marco13-moo/github-achievements-reference](https://github.com/marco13-moo/github-achievements-reference): Dependency graph SBOM unavailable or not enabled; no supported lockfile dependencies were discovered
+- [marco13-moo/github-dashboard](https://github.com/marco13-moo/github-dashboard): 2 registry lookup error(s)
+- [marco13-moo/github-metrics](https://github.com/marco13-moo/github-metrics): 1 registry lookup error(s)
 - [marco13-moo/ludotheca-share-mesh](https://github.com/marco13-moo/ludotheca-share-mesh): Dependency graph SBOM unavailable or not enabled; no supported lockfile dependencies were discovered
 - [marco13-moo/marco13-moo](https://github.com/marco13-moo/marco13-moo): Dependency graph SBOM unavailable or not enabled; no supported lockfile dependencies were discovered
+- [marco13-moo/marco13-moo.github.io](https://github.com/marco13-moo/marco13-moo.github.io): 3 registry lookup error(s)
 - [marco13-moo/my-setup](https://github.com/marco13-moo/my-setup): Dependency graph SBOM unavailable or not enabled; no supported lockfile dependencies were discovered
+- [marco13-moo/personal-cron](https://github.com/marco13-moo/personal-cron): 1 registry lookup error(s)
+- [marco13-moo/predictive-reliability-platform](https://github.com/marco13-moo/predictive-reliability-platform): 2 registry lookup error(s)
 - [marco13-moo/self-service-cicd-demo](https://github.com/marco13-moo/self-service-cicd-demo): Dependency graph SBOM unavailable or not enabled; no supported lockfile dependencies were discovered
+- [marco13-moo/self-service-cicd-platform](https://github.com/marco13-moo/self-service-cicd-platform): 7 registry lookup error(s)
 
 ## Discovery coverage
 
-- [marco13-moo/atlas-platform-fabric](https://github.com/marco13-moo/atlas-platform-fabric): 2 supported package(s) checked via repository-lockfiles
-- [marco13-moo/cloudspend-guardian](https://github.com/marco13-moo/cloudspend-guardian): 4 supported package(s) checked via repository-lockfiles
-- [marco13-moo/cron-actions](https://github.com/marco13-moo/cron-actions): 1 supported package(s) checked via repository-lockfiles
-- [marco13-moo/daily-activity-bot](https://github.com/marco13-moo/daily-activity-bot): 1 supported package(s) checked via repository-lockfiles
-- [marco13-moo/daily-activity-commits](https://github.com/marco13-moo/daily-activity-commits): 1 supported package(s) checked via repository-lockfiles
-- [marco13-moo/daily-code-review](https://github.com/marco13-moo/daily-code-review): 2 supported package(s) checked via repository-lockfiles
-- [marco13-moo/daily-dose-of-devops](https://github.com/marco13-moo/daily-dose-of-devops): 8 supported package(s) checked via repository-lockfiles
-- [marco13-moo/devsecops-vulnerability-automation](https://github.com/marco13-moo/devsecops-vulnerability-automation): 4 supported package(s) checked via repository-lockfiles
-- [marco13-moo/finops-carbon-runtime](https://github.com/marco13-moo/finops-carbon-runtime): 2 supported package(s) checked via repository-lockfiles
+- [marco13-moo/atlas-platform-fabric](https://github.com/marco13-moo/atlas-platform-fabric): 0 supported package(s) checked via repository-lockfiles
+- [marco13-moo/cloudspend-guardian](https://github.com/marco13-moo/cloudspend-guardian): 0 supported package(s) checked via repository-lockfiles
+- [marco13-moo/cron-actions](https://github.com/marco13-moo/cron-actions): 0 supported package(s) checked via repository-lockfiles
+- [marco13-moo/daily-activity-bot](https://github.com/marco13-moo/daily-activity-bot): 0 supported package(s) checked via repository-lockfiles
+- [marco13-moo/daily-activity-commits](https://github.com/marco13-moo/daily-activity-commits): 0 supported package(s) checked via repository-lockfiles
+- [marco13-moo/daily-code-review](https://github.com/marco13-moo/daily-code-review): 0 supported package(s) checked via repository-lockfiles
+- [marco13-moo/daily-dose-of-devops](https://github.com/marco13-moo/daily-dose-of-devops): 6 supported package(s) checked via repository-lockfiles
+- [marco13-moo/devsecops-vulnerability-automation](https://github.com/marco13-moo/devsecops-vulnerability-automation): 0 supported package(s) checked via repository-lockfiles
+- [marco13-moo/finops-carbon-runtime](https://github.com/marco13-moo/finops-carbon-runtime): 0 supported package(s) checked via repository-lockfiles
 - [marco13-moo/github-achievements-reference](https://github.com/marco13-moo/github-achievements-reference): 0 supported package(s) checked via repository-lockfiles
-- [marco13-moo/github-dashboard](https://github.com/marco13-moo/github-dashboard): 2 supported package(s) checked via repository-lockfiles
-- [marco13-moo/github-metrics](https://github.com/marco13-moo/github-metrics): 1 supported package(s) checked via repository-lockfiles
+- [marco13-moo/github-dashboard](https://github.com/marco13-moo/github-dashboard): 0 supported package(s) checked via repository-lockfiles
+- [marco13-moo/github-metrics](https://github.com/marco13-moo/github-metrics): 0 supported package(s) checked via repository-lockfiles
 - [marco13-moo/ludotheca-share-mesh](https://github.com/marco13-moo/ludotheca-share-mesh): 0 supported package(s) checked via repository-lockfiles
 - [marco13-moo/marco13-moo](https://github.com/marco13-moo/marco13-moo): 0 supported package(s) checked via repository-lockfiles
-- [marco13-moo/marco13-moo.github.io](https://github.com/marco13-moo/marco13-moo.github.io): 3 supported package(s) checked via github-sbom, repository-lockfiles
+- [marco13-moo/marco13-moo.github.io](https://github.com/marco13-moo/marco13-moo.github.io): 0 supported package(s) checked via github-sbom, repository-lockfiles
 - [marco13-moo/my-setup](https://github.com/marco13-moo/my-setup): 0 supported package(s) checked via repository-lockfiles
-- [marco13-moo/personal-cron](https://github.com/marco13-moo/personal-cron): 1 supported package(s) checked via repository-lockfiles
-- [marco13-moo/predictive-reliability-platform](https://github.com/marco13-moo/predictive-reliability-platform): 2 supported package(s) checked via repository-lockfiles
+- [marco13-moo/personal-cron](https://github.com/marco13-moo/personal-cron): 0 supported package(s) checked via repository-lockfiles
+- [marco13-moo/predictive-reliability-platform](https://github.com/marco13-moo/predictive-reliability-platform): 0 supported package(s) checked via repository-lockfiles
 - [marco13-moo/self-service-cicd-demo](https://github.com/marco13-moo/self-service-cicd-demo): 0 supported package(s) checked via repository-lockfiles
-- [marco13-moo/self-service-cicd-platform](https://github.com/marco13-moo/self-service-cicd-platform): 80 supported package(s) checked via repository-lockfiles
+- [marco13-moo/self-service-cicd-platform](https://github.com/marco13-moo/self-service-cicd-platform): 73 supported package(s) checked via repository-lockfiles
 
 > A dependency is only considered checked when an exact version came from an SBOM or supported lockfile and its ecosystem has an authoritative registry signal. A coverage gap is not a clean bill of health.
 <!-- deprecation-dashboard:end -->

@@ -1,22 +1,25 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-21T11:42:46.237934Z",
+  "generated_at": "2026-10-22T11:45:56.866915Z",
   "owner": "marco13-moo",
   "summary": {
     "repositories_scanned": 20,
-    "packages_checked": 114,
+    "packages_checked": 79,
     "deprecated_dependencies": 0,
     "repositories_with_findings": 0,
-    "repositories_with_incomplete_coverage": 5
+    "repositories_with_incomplete_coverage": 20
   },
   "repositories": [
     {
       "name": "marco13-moo/atlas-platform-fabric",
       "url": "https://github.com/marco13-moo/atlas-platform-fabric",
       "findings": [],
-      "packages_scanned": 2,
+      "packages_scanned": 0,
       "unsupported_ecosystems": [],
-      "lookup_errors": [],
+      "lookup_errors": [
+        "actions/checkout@v4: Registry lookup failed: HTTP 403 for https://api.github.com/repos/actions/checkout: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n",
+        "actions/setup-go@v5: Registry lookup failed: HTTP 403 for https://api.github.com/repos/actions/setup-go: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n"
+      ],
       "discovery_sources": [
         "repository-lockfiles"
       ],
@@ -26,9 +29,14 @@
       "name": "marco13-moo/cloudspend-guardian",
       "url": "https://github.com/marco13-moo/cloudspend-guardian",
       "findings": [],
-      "packages_scanned": 4,
+      "packages_scanned": 0,
       "unsupported_ecosystems": [],
-      "lookup_errors": [],
+      "lookup_errors": [
+        "actions/checkout@v4: Registry lookup failed: HTTP 403 for https://api.github.com/repos/actions/checkout: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n",
+        "actions/setup-go@v6: Registry lookup failed: HTTP 403 for https://api.github.com/repos/actions/setup-go: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n",
+        "docker/setup-buildx-action@v3: Registry lookup failed: HTTP 403 for https://api.github.com/repos/docker/setup-buildx-action: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n",
+        "docker/build-push-action@v6: Registry lookup failed: HTTP 403 for https://api.github.com/repos/docker/build-push-action: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n"
+      ],
       "discovery_sources": [
         "repository-lockfiles"
       ],
@@ -38,9 +46,11 @@
       "name": "marco13-moo/cron-actions",
       "url": "https://github.com/marco13-moo/cron-actions",
       "findings": [],
-      "packages_scanned": 1,
+      "packages_scanned": 0,
       "unsupported_ecosystems": [],
-      "lookup_errors": [],
+      "lookup_errors": [
+        "actions/checkout@v4: Registry lookup failed: HTTP 403 for https://api.github.com/repos/actions/checkout: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n"
+      ],
       "discovery_sources": [
         "repository-lockfiles"
       ],
@@ -50,9 +60,11 @@
       "name": "marco13-moo/daily-activity-bot",
       "url": "https://github.com/marco13-moo/daily-activity-bot",
       "findings": [],
-      "packages_scanned": 1,
+      "packages_scanned": 0,
       "unsupported_ecosystems": [],
-      "lookup_errors": [],
+      "lookup_errors": [
+        "actions/checkout@v4: Registry lookup failed: HTTP 403 for https://api.github.com/repos/actions/checkout: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n"
+      ],
       "discovery_sources": [
         "repository-lockfiles"
       ],
@@ -62,9 +74,11 @@
       "name": "marco13-moo/daily-activity-commits",
       "url": "https://github.com/marco13-moo/daily-activity-commits",
       "findings": [],
-      "packages_scanned": 1,
+      "packages_scanned": 0,
       "unsupported_ecosystems": [],
-      "lookup_errors": [],
+      "lookup_errors": [
+        "actions/checkout@v4: Registry lookup failed: HTTP 403 for https://api.github.com/repos/actions/checkout: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n"
+      ],
       "discovery_sources": [
         "repository-lockfiles"
       ],
@@ -74,9 +88,12 @@
       "name": "marco13-moo/daily-code-review",
       "url": "https://github.com/marco13-moo/daily-code-review",
       "findings": [],
-      "packages_scanned": 2,
+      "packages_scanned": 0,
       "unsupported_ecosystems": [],
-      "lookup_errors": [],
+      "lookup_errors": [
+        "actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09: Registry lookup failed: HTTP 403 for https://api.github.com/repos/actions/checkout: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n",
+        "actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444: Registry lookup failed: HTTP 403 for https://api.github.com/repos/actions/setup-node: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n"
+      ],
       "discovery_sources": [
         "repository-lockfiles"
       ],
@@ -86,9 +103,12 @@
       "name": "marco13-moo/daily-dose-of-devops",
       "url": "https://github.com/marco13-moo/daily-dose-of-devops",
       "findings": [],
-      "packages_scanned": 8,
+      "packages_scanned": 6,
       "unsupported_ecosystems": [],
-      "lookup_errors": [],
+      "lookup_errors": [
+        "actions/checkout@v4: Registry lookup failed: HTTP 403 for https://api.github.com/repos/actions/checkout: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n",
+        "actions/setup-node@v4: Registry lookup failed: HTTP 403 for https://api.github.com/repos/actions/setup-node: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n"
+      ],
       "discovery_sources": [
         "repository-lockfiles"
       ],
@@ -98,9 +118,14 @@
       "name": "marco13-moo/devsecops-vulnerability-automation",
       "url": "https://github.com/marco13-moo/devsecops-vulnerability-automation",
       "findings": [],
-      "packages_scanned": 4,
+      "packages_scanned": 0,
       "unsupported_ecosystems": [],
-      "lookup_errors": [],
+      "lookup_errors": [
+        "actions/checkout@v4: Registry lookup failed: HTTP 403 for https://api.github.com/repos/actions/checkout: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n",
+        "aquasecurity/setup-trivy@e07451d2e059ed86c2870430ea286b3a9e0bf241: Registry lookup failed: HTTP 403 for https://api.github.com/repos/aquasecurity/setup-trivy: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n",
+        "actions/upload-artifact@v4: Registry lookup failed: HTTP 403 for https://api.github.com/repos/actions/upload-artifact: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n",
+        "amondnet/vercel-action@v20: Registry lookup failed: HTTP 403 for https://api.github.com/repos/amondnet/vercel-action: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n"
+      ],
       "discovery_sources": [
         "repository-lockfiles"
       ],
@@ -110,9 +135,12 @@
       "name": "marco13-moo/finops-carbon-runtime",
       "url": "https://github.com/marco13-moo/finops-carbon-runtime",
       "findings": [],
-      "packages_scanned": 2,
+      "packages_scanned": 0,
       "unsupported_ecosystems": [],
-      "lookup_errors": [],
+      "lookup_errors": [
+        "actions/checkout@v4: Registry lookup failed: HTTP 403 for https://api.github.com/repos/actions/checkout: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n",
+        "actions/setup-python@v5: Registry lookup failed: HTTP 403 for https://api.github.com/repos/actions/setup-python: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n"
+      ],
       "discovery_sources": [
         "repository-lockfiles"
       ],
@@ -134,9 +162,12 @@
       "name": "marco13-moo/github-dashboard",
       "url": "https://github.com/marco13-moo/github-dashboard",
       "findings": [],
-      "packages_scanned": 2,
+      "packages_scanned": 0,
       "unsupported_ecosystems": [],
-      "lookup_errors": [],
+      "lookup_errors": [
+        "actions/checkout@v4: Registry lookup failed: HTTP 403 for https://api.github.com/repos/actions/checkout: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n",
+        "actions/setup-python@v5: Registry lookup failed: HTTP 403 for https://api.github.com/repos/actions/setup-python: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n"
+      ],
       "discovery_sources": [
         "repository-lockfiles"
       ],
@@ -146,9 +177,11 @@
       "name": "marco13-moo/github-metrics",
       "url": "https://github.com/marco13-moo/github-metrics",
       "findings": [],
-      "packages_scanned": 1,
+      "packages_scanned": 0,
       "unsupported_ecosystems": [],
-      "lookup_errors": [],
+      "lookup_errors": [
+        "lowlighter/metrics@latest: Registry lookup failed: HTTP 403 for https://api.github.com/repos/lowlighter/metrics: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n"
+      ],
       "discovery_sources": [
         "repository-lockfiles"
       ],
@@ -182,9 +215,13 @@
       "name": "marco13-moo/marco13-moo.github.io",
       "url": "https://github.com/marco13-moo/marco13-moo.github.io",
       "findings": [],
-      "packages_scanned": 3,
+      "packages_scanned": 0,
       "unsupported_ecosystems": [],
-      "lookup_errors": [],
+      "lookup_errors": [
+        "actions/checkout@4.*.*: Registry lookup failed: HTTP 403 for https://api.github.com/repos/actions/checkout: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n",
+        "marco13-moo/marco13-moo.github.io@main: Registry lookup failed: HTTP 403 for https://api.github.com/repos/marco13-moo/marco13-moo.github.io: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n",
+        "actions/checkout@v4: Registry lookup failed: HTTP 403 for https://api.github.com/repos/actions/checkout: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n"
+      ],
       "discovery_sources": [
         "github-sbom",
         "repository-lockfiles"
@@ -207,9 +244,11 @@
       "name": "marco13-moo/personal-cron",
       "url": "https://github.com/marco13-moo/personal-cron",
       "findings": [],
-      "packages_scanned": 1,
+      "packages_scanned": 0,
       "unsupported_ecosystems": [],
-      "lookup_errors": [],
+      "lookup_errors": [
+        "actions/checkout@v4: Registry lookup failed: HTTP 403 for https://api.github.com/repos/actions/checkout: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n"
+      ],
       "discovery_sources": [
         "repository-lockfiles"
       ],
@@ -219,9 +258,12 @@
       "name": "marco13-moo/predictive-reliability-platform",
       "url": "https://github.com/marco13-moo/predictive-reliability-platform",
       "findings": [],
-      "packages_scanned": 2,
+      "packages_scanned": 0,
       "unsupported_ecosystems": [],
-      "lookup_errors": [],
+      "lookup_errors": [
+        "actions/checkout@v4: Registry lookup failed: HTTP 403 for https://api.github.com/repos/actions/checkout: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n",
+        "actions/setup-go@v5: Registry lookup failed: HTTP 403 for https://api.github.com/repos/actions/setup-go: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n"
+      ],
       "discovery_sources": [
         "repository-lockfiles"
       ],
@@ -243,9 +285,17 @@
       "name": "marco13-moo/self-service-cicd-platform",
       "url": "https://github.com/marco13-moo/self-service-cicd-platform",
       "findings": [],
-      "packages_scanned": 80,
+      "packages_scanned": 73,
       "unsupported_ecosystems": [],
-      "lookup_errors": [],
+      "lookup_errors": [
+        "actions/checkout@v5: Registry lookup failed: HTTP 403 for https://api.github.com/repos/actions/checkout: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n",
+        "docker/setup-buildx-action@v3: Registry lookup failed: HTTP 403 for https://api.github.com/repos/docker/setup-buildx-action: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n",
+        "sigstore/cosign-installer@v3: Registry lookup failed: HTTP 403 for https://api.github.com/repos/sigstore/cosign-installer: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n",
+        "aquasecurity/setup-trivy@v0.2.4: Registry lookup failed: HTTP 403 for https://api.github.com/repos/aquasecurity/setup-trivy: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n",
+        "actions/upload-artifact@v4: Registry lookup failed: HTTP 403 for https://api.github.com/repos/actions/upload-artifact: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n",
+        "actions/download-artifact@v4: Registry lookup failed: HTTP 403 for https://api.github.com/repos/actions/download-artifact: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n",
+        "actions/setup-go@v6: Registry lookup failed: HTTP 403 for https://api.github.com/repos/actions/setup-go: {\"message\":\"API rate limit exceeded for 20.168.115.112. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)\",\"documentation_url\":\"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting\"}\n"
+      ],
       "discovery_sources": [
         "repository-lockfiles"
       ],
